@@ -18,7 +18,7 @@ const insert = async ()=>{
   const obj2 = {
       name : "N73", brand : "Nokia" , price : 7000
     }
-  const result = await db.insertOne(obj2)
+  const result = await db.insertMany(obj)
   if(result. acknowledged){
     console.log("data inserted");
 
