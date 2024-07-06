@@ -34,6 +34,7 @@ app.put('/:name', async (req, res) =>{
 
 app.delete('/:_id' , async (req, resp) =>{
   let data = await dbConnect();
+  
   let result = await data.deleteOne({id : new mongoDB.ObjectId( req.params._id)})
   resp.send(result)
 })
