@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page</title>
+  </head>
+  <style>
+    * {
+      background: #131313;
+      color: #fff;
+    }
+    ul > li{
+      /* list-style-type: none; */
+      /* display: inline; */
+      font-weight: 900;
+      text-transform: capitalize;
+      color: rgb(114, 216, 86);
+    }
+  </style>
+  <body>
+    <%- include('common/header') %>
+    <h1 style="text-align: center">User Data</h1>
+    <p>Name = <%=user.name %></p>
+    <p>Age = <%=user.age %></p>
+    <p>City = <%=user.city %></p>
+    <p>Email = <%=user.email %></p>
+    <ul>
+      <% user.skills.forEach((item)=>{ %>
+      <li><%=item%></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
