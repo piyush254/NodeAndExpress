@@ -1,0 +1,16 @@
+{
+  "name": "express5",
+  "version": "1.0.0",
+  "description": "Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
