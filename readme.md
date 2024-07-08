@@ -17,4 +17,17 @@ const upload = multer({
   })
 }).single('user_file')
 
+
+// connection with mysql
+
+const mysql = require('mysql2');
+
+// Create a connection to the database
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'password12',
+  database: 'nodepractice'
+});
+
 ```
