@@ -24,6 +24,7 @@ const upload = multer({
 ## Connection with mysql
 
 ```javascript
+// use npm i mysql2
 const mysql = require('mysql2');
 
 // Create a connection to the database
