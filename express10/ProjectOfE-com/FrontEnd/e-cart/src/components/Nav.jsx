@@ -9,32 +9,32 @@ function Nav() {
     <header>
       <ul>
         <li>
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink exact to="/" activeclassname="active" >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/products" activeClassName="active">
-          Products
+          <NavLink to="/products" activeclassname= "active">
+          Product
           </NavLink>
         </li>
         <li>
-          <NavLink to="/addProducts" activeClassName="active">
+          <NavLink to="/addProducts" activeclassname="active">
           Add Products
           </NavLink>
         </li> 
         <li>
-          <NavLink to="/updateProducts" activeClassName="active">
+          <NavLink to="/updateProducts" activeclassname="active">
           Update Products
           </NavLink>
         </li> 
         <li>
-          <NavLink to="/signup" activeClassName="active">
+          <NavLink to="/signup" activeclassname="active">
           Signup
           </NavLink>
         </li>
         <li className="cart">
-          <NavLink to="/profile" activeClassName="active">
+          <NavLink to="/profile" activeclassname="active">
   
             <span>Profile <FaUser/></span>
           </NavLink>

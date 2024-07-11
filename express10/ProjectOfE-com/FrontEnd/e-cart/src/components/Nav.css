@@ -58,8 +58,8 @@ footer {
   color: #fff;
   padding: 0 2rem;
   gap: 1rem;
-  position: sticky !important;
-  bottom: 0; 
+  position: sticky;
+  bottom: 0vh; 
   left: 0;
 }
 
