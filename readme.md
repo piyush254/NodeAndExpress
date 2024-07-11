@@ -1,4 +1,4 @@
-# important Point 
+# Important Points 
 ## This is for the access of id from mongoDB
 ```javascript
 const mongoDB = require("mongodb");
