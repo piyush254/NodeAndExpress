@@ -58,9 +58,10 @@ footer {
   color: #fff;
   padding: 0 2rem;
   gap: 1rem;
-  position: sticky;
-  bottom: 0vh; 
-  left: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
 }
 
 footer > div > ul > li {
@@ -127,4 +128,8 @@ footer > div {
   footer > div > ul > li {
     margin-bottom: 0.5rem;
   }
+}
+
+.active{
+  color: blueviolet;
 }

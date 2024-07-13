@@ -1,42 +1,76 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 
 import "./Nav.css";
 
 function Nav() {
+  const auth = localStorage.getItem("user");
+  const navigate = useNavigate()
+  const Logout = ()=> {
+    localStorage.clear()
+    navigate("/signup") 
+  }
   return (
     <header>
       <ul>
         <li>
-          <NavLink exact to="/" activeclassname="active" >
+          <NavLink
+            exact
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/products" activeclassname= "active">
-          Product
+          <NavLink
+            to="/products"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Product
           </NavLink>
         </li>
         <li>
-          <NavLink to="/addProducts" activeclassname="active">
-          Add Products
+          <NavLink
+            to="/addProducts"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Add Products
           </NavLink>
-        </li> 
+        </li>
         <li>
-          <NavLink to="/updateProducts" activeclassname="active">
-          Update Products
+          <NavLink
+            to="/updateProducts"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Update Products
           </NavLink>
-        </li> 
+        </li>
         <li>
-          <NavLink to="/signup" activeclassname="active">
-          Signup
-          </NavLink>
+        { auth ?  <NavLink
+            to="/signup"
+            className={({ isActive }) => (isActive ? "active" : "")}
+         onClick={() =>{
+          Logout();
+         }} >
+            Logout
+          </NavLink> :  <NavLink
+            to="/signup"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Signup
+          </NavLink>}
+         
         </li>
         <li className="cart">
-          <NavLink to="/profile" activeclassname="active">
-  
-            <span>Profile <FaUser/></span>
+          <NavLink
+            to="/profile"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span>
+              Profile <FaUser />{" "}
+            </span>
           </NavLink>
         </li>
       </ul>
