@@ -1,0 +1,67 @@
+/* General styles for the login container */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  padding-top: 15vh;
+  /* background-color: #f0f2f5; */
+  margin-bottom: 10vh;
+}
+
+/* Styling the form */
+.login form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Styling for the labels */
+.login label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #666;
+  transition: color 0.3s ease-in-out; /* Add transition for animation */
+}
+
+/* Styling for the input fields */
+.login input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out; /* Add transition for input focus animation */
+}
+
+/* Focus effect on input fields */
+.login input:focus {
+  border-color: #007bff;
+}
+
+/* Focus effect on labels when input fields are focused */
+.login input:focus + label {
+  color: #007bff;
+}
+
+/* Styling for the button */
+.login button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Add transition for button hover animation */
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}

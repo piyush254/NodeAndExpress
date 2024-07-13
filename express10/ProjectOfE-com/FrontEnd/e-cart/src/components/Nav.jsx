@@ -60,8 +60,15 @@ function Nav() {
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Signup
-          </NavLink>}
-         
+          </NavLink>} 
+        </li>
+        <li>
+          <NavLink
+            to="/login"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Login
+          </NavLink>
         </li>
         <li className="cart">
           <NavLink

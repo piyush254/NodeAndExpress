@@ -42,7 +42,7 @@ function Signup() {
   return (
     <div className="aligncenter">
       <div className="register-container">
-        <h2 style={{ color: "#131313", textAlign: "center" }}>SignUp!!</h2>
+        <h2 style={{ color: "#666", textAlign: "center" , marginBottom: "1rem" }}>SignUp</h2>
         <form className="register-form" onSubmit={dataInfo}>
           <div className="form-group">
             <label htmlFor="name">Enter Name</label>

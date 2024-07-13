@@ -4,13 +4,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import PrivateComponent from "./components/PrivateComponent";
+import Login from "./components/Login";
 
 function App() {
+
   return (
     <BrowserRouter>
     <div style={{minHeight : "100vh", backgroundColor:"#131313" , position : "relative" , paddingBottom : "10vh"}}>
         <Nav />
         <Routes>
+      
           <Route path="/" element={<PrivateComponent />}>
             <Route index element={<h1>Home</h1>} />
             <Route path="products" element={<h1>Products</h1>} />
@@ -19,6 +22,7 @@ function App() {
             <Route path="profile" element={<h1>Profile</h1>} />
           </Route>
           <Route path="signup" element={<Signup />} />
+          <Route path="/login" element= {<Login />}  />
         </Routes>
         <Footer />
     </div>
